@@ -11,11 +11,13 @@ How to build project in VS Code "CMake Tools" plugin?
 ## Usage of VS Code CMake tools plugin
 1. If a file with "CMakeLists.txt" name does not yet exist, create it:
     * press "ctrl+shift+p" in VS Code and type "CMake: Quick Start"
-2. Select a kit:
+2. Don't forget "build" directory inside the project:
+    * type: "mkdir build" in cmd window 
+3. Select a kit:
     * press "ctrl+shift+p" in VS Code and type "CMake: Select a Kit"
-3. Select a variant:
+4. Select a variant:
     * press "ctrl+shift+p" in VS Code and type "CMake: Select Variant"
-4. Run cmake build process:
+5. Run cmake build process:
     * press "ctrl+shift+p" in VS Code and type "CMake: Build"
     
 ## License

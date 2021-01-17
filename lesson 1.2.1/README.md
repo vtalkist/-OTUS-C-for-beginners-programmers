@@ -16,9 +16,9 @@ This lesson about base types in C++
         auto variableFloatDivitionWitchCharacter = 5.f / 3; // result will be 0.333333 as float type
 
         std::cout << typeid(variableInt).name() << std::endl; // default output will be: i
-        std::cout << typeid(variableFloatDivition).name() << std::endl;
-        std::cout << typeid(variableDoubleDivition).name() << std::endl;
-        std::cout << typeid(variableFloatDivitionWitchCharacter).name() << std::endl;
+        std::cout << typeid(variableFloatDivition).name() << std::endl; // output will be: f
+        std::cout << typeid(variableDoubleDivition).name() << std::endl; // output will be: d
+        std::cout << typeid(variableFloatDivitionWitchCharacter).name() << std::endl; // // output will be: f
 
         return 0;
     }

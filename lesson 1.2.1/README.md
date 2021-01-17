@@ -3,7 +3,20 @@
 This lesson about base types in C++
 
 ## Important
+* By default, all integers constants belong to integer type. For example:
+    ```cpp
+    #include <iostream>
+    #include <typeinfo>
 
+    int main(int argc, char* argv[]) {
+
+        auto variableInt = 5; // default
+
+        std::cout << typeid(variableInt).name() << std::endl; // default output will be: i
+
+        return 0;
+    }
+    ```
 * By default, all constants with floating point belong to double type. For example:
     ```cpp
     #include <iostream>

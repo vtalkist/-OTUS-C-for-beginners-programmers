@@ -11,10 +11,10 @@ This lesson about base types in C++
 
     int main(int argc, char* argv[]) {
 
-        auto variableDouble = 0.45;
-        auto vatiableFloat = 0.45f;
+        auto variableDouble = 0.45; // default
+        auto vatiableFloat = 0.45f; // the type is specially specified here by the f character after initialize number
     
-        std::cout << typeid(variableDouble).name() << std::endl; // output will be: d
+        std::cout << typeid(variableDouble).name() << std::endl; // default output will be: d
         std::cout << typeid(vatiableFloat).name() << std::endl;  // output will be: f
 
         return 0;

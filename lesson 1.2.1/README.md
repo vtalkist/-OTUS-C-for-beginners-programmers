@@ -41,6 +41,24 @@ This lesson about base types in C++
     ```
 * Unsigned type in floating point variables does not exist !!!
 
+* Character arrays are overridden by the C ++ standard. Only character arrays do not contain a pointer, and the compiler generates code that outputs all characters.
+    ```cpp
+    #include <iostream>
+    #include <typeinfo>
+
+    int main(int argc, char* argv[]) {
+
+        int intArray[] = {0, 1, 2, 3, 4, 5, 6};
+        char symbArray[] = {'H', 'e', 'l', 'l', 'o', '!', '\0'};
+        
+        std::cout << "intArray = " << intArray << std::endl; // output will be some value of addres
+        std::cout << "symbArray = " << symbArray << std::endl; // output will be: Hello!
+        
+
+        return 0;
+    }
+    ```
+
 
 ## License
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)

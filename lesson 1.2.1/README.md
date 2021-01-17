@@ -11,10 +11,14 @@ This lesson about base types in C++
     int main(int argc, char* argv[]) {
 
         auto variableInt = 5; // default
-        float = 5 / 3; // result will be 0
-        float = 5.f / 3; // result will be 0.333333
+        float variableFloatDivition = 5 / 3; // result will be 0 as float
+        auto variableDoubleDivition = 5.0 / 3; // result will be 0.333333 as double type
+        auto variableFloatDivitionWitchCharacter = 5.f / 3; // result will be 0.333333 as float type
 
         std::cout << typeid(variableInt).name() << std::endl; // default output will be: i
+        std::cout << typeid(variableFloatDivition).name() << std::endl;
+        std::cout << typeid(variableDoubleDivition).name() << std::endl;
+        std::cout << typeid(variableFloatDivitionWitchCharacter).name() << std::endl;
 
         return 0;
     }

@@ -11,6 +11,8 @@ This lesson about base types in C++
     int main(int argc, char* argv[]) {
 
         auto variableInt = 5; // default
+        float = 5 / 3; // result will be 0
+        float = 5.f / 3; // result will be 0.333333
 
         std::cout << typeid(variableInt).name() << std::endl; // default output will be: i
 
